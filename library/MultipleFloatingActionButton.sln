@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleFloatingActionButton", "MultipleFloatingActionButton.csproj", "{A8C263AD-7B72-4EE7-8DBD-687AC4A24474}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8C263AD-7B72-4EE7-8DBD-687AC4A24474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8C263AD-7B72-4EE7-8DBD-687AC4A24474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8C263AD-7B72-4EE7-8DBD-687AC4A24474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8C263AD-7B72-4EE7-8DBD-687AC4A24474}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
