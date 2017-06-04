@@ -7,9 +7,7 @@ Circluar floating action menu with configurable amount of actions and bunch of a
 
 Two actions |  Three actions  | Four actions
 ---|---|---
-![two](https://github.com/bradlak/MultipleFloatingActionButton/blob/master/Media/twoFabs.gif "Two") |
-![three](https://github.com/bradlak/MultipleFloatingActionButton/blob/master/Media/threeFabs.gif) |
-![four](https://github.com/bradlak/MultipleFloatingActionButton/blob/master/Media/fourFabs.gif) |
+![two](https://github.com/bradlak/MultipleFloatingActionButton/blob/master/Media/twoFabs.gif "Two") |![three](https://github.com/bradlak/MultipleFloatingActionButton/blob/master/Media/threeFabs.gif) |![four](https://github.com/bradlak/MultipleFloatingActionButton/blob/master/Media/fourFabs.gif) |
 
 And so on...
 
