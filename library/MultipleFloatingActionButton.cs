@@ -28,8 +28,6 @@ namespace bradlak
 
         private AnimationType type = AnimationType.None;
 
-        private bool IsMenuOpened = false;
-
         private float initialX;
 
         private float initialY;
@@ -47,6 +45,8 @@ namespace bradlak
         {
             Init(attrs);
         }
+
+        public bool IsMenuOpened { get; private set; }
 
         protected void Init(IAttributeSet attrs)
         {
@@ -98,27 +98,44 @@ namespace bradlak
             this.type = type;
         }
 
+        public void OpenMenu()
+        {
+            AnimateMenu(true);
+        }
+
+        public void HideMenu()
+        {
+            AnimateMenu(false);
+        }
+
         private void MainFab_Click(object sender, EventArgs e)
         {
-            ProcessFabs();
-
+            AnimateMenu(!IsMenuOpened);
             onMainClick?.Invoke();
+        }
 
-            IsMenuOpened = !IsMenuOpened;
-
-            if (IsMenuOpened)
+        private void AnimateMenu(bool opening)
+        {
+            if (opening != IsMenuOpened)
             {
-                container.SetBackgroundColor(Color.ParseColor("#80000000"));
+                ProcessFabs();
 
-                if(mainWithAnimation)
-                    mainFab.Animate().Rotation(45).SetDuration(300).Start();
-            }
-            else
-            {
-                container.SetBackgroundColor(Color.Transparent);
+                if (opening)
+                {
+                    container.SetBackgroundColor(Color.ParseColor("#80000000"));
 
-                if(mainWithAnimation)
-                    mainFab.Animate().Rotation(0).SetDuration(300).Start();
+                    if (mainWithAnimation)
+                        mainFab.Animate().Rotation(45).SetDuration(300).Start();
+                }
+                else
+                {
+                    container.SetBackgroundColor(Color.Transparent);
+
+                    if (mainWithAnimation)
+                        mainFab.Animate().Rotation(0).SetDuration(300).Start();
+                }
+
+                IsMenuOpened = opening;
             }
         }
 
