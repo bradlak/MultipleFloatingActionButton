@@ -42,8 +42,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MultipleFloatingActionButton, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Library\MultipleFloatingActionButton.dll</HintPath>
+      <HintPath>packages\bradlak.MultipleFloatingActionButton.1.1.0\lib\MultipleFloatingActionButton.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />

@@ -29,6 +29,7 @@ namespace MultiFabSample
             multipleFab.AddAction(Resource.Color.Yellow, Resource.Drawable.share, () =>
             {
                 Toast.MakeText(this, "share clicked", ToastLength.Short).Show();
+                multipleFab.HideMenu();
             });
             multipleFab.AddAction(Resource.Color.Blue, Resource.Drawable.@lock, () =>
             {
